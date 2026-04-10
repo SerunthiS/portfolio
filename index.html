@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serunthi Suppiah - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="wc"></canvas>
+<div class="hint">Cliquez n'importe où</div>
+
+<div class="page">
+
+  <header>
+    <div>
+      <div class="name">Serunthi<br><em>Suppiah</em></div>
+      <div class="tagline">Étudiante en Informatique — Spécialisation DevOps & Cloud</div>
+    </div>
+<nav>
+  <a href="#about">À propos</a>
+  <a href="#competences">Compétences</a>
+  <a href="#projets">Projets</a>
+  <a href="#contact">Contact</a>
+</nav>
+  </header>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <div class="section-label">À propos</div>
+      <h2>Petite présentation</h2>
+      <p>Étudiante en troisième année de licence Informatique à l'Université Paris 8, je me forme vers DevOps par conviction autant que par curiosité. Ce qui m'attire dans ce domaine, c'est ce qui se passe en dessous : les couches réseau, les systèmes, l'infrastructure qui fait tourner le reste en silence.</p>
+      <p>J'aborde chaque projet avec méthode : comprendre avant d'agir, tester avant de déployer. Je recherche une alternance en Master DevOps Infrastructure et Cloud pour mettre cette rigueur au service d'une équipe.</p>
+
+      
+    </div>
+    <div class="timeline">
+  <div class="tl-line"><div class="tl-line-fill"></div></div>
+
+  <div class="tl-items">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-year">2022 — 2023</div>
+        <div class="tl-title">Bac Général</div>
+        <div class="tl-sub">Lycée Wolfgang Amadeus Mozart - NSI, Sciences de l'ingénieur, AMC</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-year">2023 — 2024</div>
+        <div class="tl-title">Licence Informatique - L1</div>
+        <div class="tl-sub">Université Paris VIII · Programmation, logique, mathématique</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-year">2024 — 2025</div>
+        <div class="tl-title">Licence Informatique - L2</div>
+        <div class="tl-sub">Université Paris VIII - Systèmes & réseaux, dev web, bases de données</div>
+      </div>
+    </div>
+
+    <div class="tl-item tl-item--active">
+      <div class="tl-dot tl-dot--active"></div>
+      <div class="tl-content">
+        <div class="tl-year">2025 — 2026</div>
+        <div class="tl-title">Licence Informatique - L3</div>
+        <div class="tl-sub">Université Paris VIII - Cybersécurité, IA, algorithmique avancée</div>
+      </div>
+    </div>
+
+    <div class="tl-item tl-item--future">
+      <div class="tl-dot tl-dot--future"></div>
+      <div class="tl-content">
+        <div class="tl-year">2026 — 2027</div>
+        <div class="tl-title">Master DevOps</div>
+        <div class="tl-sub">Infrastructure & Cloud - En recherche d'alternance</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <div class="section-label" id="competences">Compétences</div>
+  <div class="skills-grid">
+
+    <div class="skill-item" onclick="toggleSkill(this)">
+      <div class="skill-name">Langages <span class="skill-arrow">↓</span></div>
+      <div class="skill-desc">Python, HTML/CSS, JavaScript, TypeScript, C/C++, PHP, Kotlin</div>
+      <div class="skill-detail">
+        <span class="skill-tag">Python</span><span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">TypeScript</span><span class="skill-tag">C/C++</span>
+        <span class="skill-tag">PHP</span><span class="skill-tag">Kotlin</span>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+    </div>
+
+    <div class="skill-item" onclick="toggleSkill(this)">
+      <div class="skill-name">Systèmes & réseaux <span class="skill-arrow">↓</span></div>
+      <div class="skill-desc">Linux, SSH, TCP/IP, DNS, DHCP, VLAN</div>
+      <div class="skill-detail">
+        <span class="skill-tag">Administration Linux</span><span class="skill-tag">SSH</span>
+        <span class="skill-tag">TCP/IP</span><span class="skill-tag">DNS</span>
+        <span class="skill-tag">DHCP</span><span class="skill-tag">VLAN</span>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+    </div>
+
+    <div class="skill-item" onclick="toggleSkill(this)">
+      <div class="skill-name">Cloud & DevOps <span class="skill-arrow">↓</span></div>
+      <div class="skill-desc">Docker, CI/CD, Azure, Kubernetes</div>
+      <div class="skill-detail">
+        <span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">Azure</span><span class="skill-tag">Kubernetes</span>
+        <span class="skill-tag">Terraform</span>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+    </div>
+
+    <div class="skill-item" onclick="toggleSkill(this)">
+      <div class="skill-name">Bases de données <span class="skill-arrow">↓</span></div>
+      <div class="skill-desc">MySQL, SQLite, MongoDB</div>
+      <div class="skill-detail">
+        <span class="skill-tag">MySQL</span><span class="skill-tag">SQLite</span>
+        <span class="skill-tag">MongoDB</span>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+    </div>
+
+    <div class="skill-item" onclick="toggleSkill(this)">
+      <div class="skill-name">Frameworks <span class="skill-arrow">↓</span></div>
+      <div class="skill-desc">Node.js, Vue.js, React, Flask, Numpy</div>
+      <div class="skill-detail">
+        <span class="skill-tag">Node.js</span><span class="skill-tag">Vue.js</span>
+        <span class="skill-tag">React</span><span class="skill-tag">Flask</span>
+        <span class="skill-tag">Numpy</span>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+    </div>
+
+    <div class="skill-item" onclick="toggleSkill(this)">
+      <div class="skill-name">Outils <span class="skill-arrow">↓</span></div>
+      <div class="skill-desc">Git, GitHub, VMware, VS Code</div>
+      <div class="skill-detail">
+        <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
+        <span class="skill-tag">VMware</span><span class="skill-tag">Visual Studio Code</span>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+    </div>
+
+  </div>
+
+  <!-- PROJETS -->
+  <section class="projects" id="projets">
+    <div class="section-label">Projets sélectionnés</div>
+
+
+      <div class="project">
+      <span class="project-num">01</span>
+      <div>
+        <div class="project-title">Conteneurisation Docker <span class="tag" style="font-size:.6rem;margin-left:.5rem;vertical-align:middle">En cours</span></div>
+        <div class="project-desc">Dockerisation d'une application existante — rédaction du Dockerfile, mise en place d'un docker-compose multi-services avec base de données. Portabilité et reproductibilité de l'environnement.</div>
+        <div class="project-tags">
+          <span class="tag">Docker</span>
+          <span class="tag">Docker Compose</span>
+          <span class="tag">Linux</span>
+        </div>
+      </div>
+      <span class="project-year">2026</span>
+    </div>
+
+        <div class="project">
+      <span class="project-num">02</span>
+      <div>
+        <div class="project-title">Pipeline CI/CD & déploiement Azure <span class="tag" style="font-size:.6rem;margin-left:.5rem;vertical-align:middle">En cours</span></div>
+        <div class="project-desc">Pipeline CI/CD complet via GitHub Actions build, tests automatisés et déploiement continu sur Azure App Service</div>
+        <div class="project-tags">
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Azure</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">Docker</span>
+        </div>
+      </div>
+      <span class="project-year">2026</span>
+
+    </div>
+     <div class="project">
+      <span class="project-num">03</span>
+      <div>
+        <div class="project-title">LuckChat — Application de messagerie chiffrée</div>
+        <div class="project-desc">Projet inspiré du cours de Cybersécurité. Messagerie web instantanée avec chiffrement de bout en bout. Échange de clés via ECDH P-256, chiffrement des messages en AES-256-GCM via la Web Crypto API, transport en temps réel par WebSockets. Interface multi-thèmes avec gestion des contacts, statuts en ligne et indicateur de frappe.</div>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">WebSockets</span>
+          <span class="tag">AES-256-GCM</span>
+          <span class="tag">ECDH</span>
+          <span class="tag">Web Crypto API</span>
+        </div>
+      </div>
+      <span class="project-year">2025</span>
+    </div>
+
+    <div class="project">
+      <span class="project-num">04</span>
+      <div>
+        <div class="project-title">Tchat</div>
+        <div class="project-desc">Application de messagerie en ligne de commande en architecture client-serveur. Serveur en C avec gestion des sockets et multiplexage via poll(), client en Python avec threading. Supporte la création de groupes, les messages privés et la gestion de sessions multi-utilisateurs.</div>
+        <div class="project-tags">
+          <span class="tag">C</span>
+          <span class="tag">Python</span>
+          <span class="tag">Sockets</span>
+          <span class="tag">TCP/IP</span>
+          <span class="tag">Multithreading</span>
+        </div>
+      </div>
+      <span class="project-year">2025</span>
+    </div>
+
+    <div class="project">
+      <span class="project-num">05</span>
+      <div>
+        <div class="project-title">Développement de Shell</div>
+        <div class="project-desc">Implémentation d'un interpréteur de commandes en C reproduisant le comportement d'un shell Unix — parsing des commandes, gestion des processus avec fork()/exec(), redirections et pipes.</div>
+        <div class="project-tags">
+          <span class="tag">C</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Processus</span>
+          <span class="tag">Unix</span>
+        </div>
+      </div>
+      <span class="project-year">2025</span>
+    </div>
+
+        <div class="project">
+      <span class="project-num">06</span>
+      <div>
+        <div class="project-title">Forum dynamique</div>
+        <div class="project-desc">Forum web complet développé en PHP avec authentification sécurisée — mots de passe hashés, sessions PHP, protection contre les injections SQL via PDO. Fonctionnalités : inscription, connexion, salons thématiques, sujets, messages, recherche et gestion de profil.</div>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">PDO</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Sessions</span>
+        </div>
+      </div>
+      <span class="project-year">2025</span>
+    </div>
+
+
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+  <div>
+    <div class="section-label">Contact</div>
+    <h2>Let's build !</h2>
+    <p>A la recherche d'une alternance en DevOps Infrastructure et Cloud. N'hésite pas à me contacter pour échanger !</p>
+  </div>
+  <div class="contact-links">
+    <a class="contact-link" href="mailto:serunthi.suppiah@hotmail.com">
+      <span class="link-line"></span>
+      <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="M2 7l10 7 10-7"/>
+      </svg>
+      serunthi.suppiah@hotmail.com
+    </a>
+    <a class="contact-link" href="https://github.com/serunthi" target="_blank">
+      <span class="link-line"></span>
+      <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+      </svg>
+      GitHub @serunthi
+    </a>
+    <a class="contact-link" href="https://github.com/serunthi/cv" target="_blank">
+      <span class="link-line"></span>
+      <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="16" y1="13" x2="8" y2="13"/>
+        <line x1="16" y1="17" x2="8" y2="17"/>
+        <polyline points="10 9 9 9 8 9"/>
+      </svg>
+      Curriculum Vitae
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <span>© 2026 Serunthi Suppiah</span>
+  </footer>
+
+</div>
+
+<script src="js/animation.js"></script>
+</body>
+</html>
